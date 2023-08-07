@@ -1,0 +1,92 @@
+/* General */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor {
+ width: 500px;
+ margin: 0 auto;
+}
+
+body {
+text-align: center;
+font-family:'Courier New', Courier, monospace;
+background-color: pink;
+}
+
+ /* Header */
+h1 {
+  margin-bottom: 50px;
+}
+
+.number-s {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.continue {
+  margin-top: 25px;
+  padding: 10px;
+ 
+}
+
+.continue:link, .continue:visited {
+  color: black;
+  background-color: white;
+
+}
+
+.continue:hover, .continue:active {
+  background-color: black;
+  color: white;
+}
+
+
+.album-n {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* ... (existing styles) ... */
+
+.hidden {
+  display: none;
+}
+
+#song-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.song-rating-slider {
+  width: 30px;;
+  text-align: center;
+}
+
+/* ... (other styles) ... */
+
+#submit-rating {
+  margin-top: 25px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+#final-rating {
+  margin-top: 25px;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 25px;
+
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" />
+
+  <style>
+    /* Your CSS styles go here */
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <h1>Rate Any Album</h1>
+    </header>
+    
+
+    <form id="album-info-form" class="form-active" onsubmit="return validateForm(event)">
+      <label class="album-n" for="album-name">Album Name</label><br>
+      <input type="text" id="album-name" required minlength="2" maxlength="16" size="10"><br>
+      <label class="number-s" for="number-songs">Number of songs</label><br>
+      <input type="number" id="number-songs" min="1" max="30"><br>
+      <input class="continue" type="submit" value="Continue"/>
+    </form>
+    <div id="album-rating" class="hidden">
+      <h2 id="album-name-display"></h2>
+      <div id="song-container"></div>
+      <button id="submit-rating">Rate</button>
+      <div id="final-rating" class="hidden">
+        <h3>Final Album Rating:</h3>
+        <p id="final-rating-value"></p>
+      </div>
+    </div>
+    <div id="error-message" class="hidden">
+      <p class="error-text">Please enter a value between 0 and 10.</p>
+    </div>
+  </div>
+  
+<script src="index.js"></script>
+</script>
+</body>
+</html> 
