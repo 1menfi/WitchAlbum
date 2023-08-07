@@ -29,6 +29,10 @@ h1 {
   display: inline-block;
 }
 
+.typing-bar {
+  background-color: transparent;
+}
+
 /* continue botton */
 
 .continue {
@@ -79,10 +83,12 @@ h1 {
 /* song box */
 
 .song-rating-slider {
-  width: 30px;
+  width: 40px;
   text-align: center;
   margin-top: 10px;
+  background-color: transparent;
 }
+
 /* 
 submit button */
 
