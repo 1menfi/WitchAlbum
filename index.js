@@ -1,7 +1,7 @@
 function validateForm(event) {
   const numSongs = parseInt(document.getElementById("number-songs").value);
   const errorMessage = document.getElementById("error-message");
-  
+
   if (isNaN(numSongs) || numSongs <= 0) {
     // Display an error message or perform any necessary action
     errorMessage.textContent = "Please enter a valid number of songs.";
@@ -21,17 +21,22 @@ function validateForm(event) {
 function storeData(event) {
   event.preventDefault();
 
-  console.log("Function storeData executed.");
-
   const albumName = document.getElementById("album-name").value;
+  const artistName = document.getElementById("artist-name").value;
+  const releaseYear = document.getElementById("release-year").value;
+  const genre = document.getElementById("genre").value;
   const numSongs = parseInt(document.getElementById("number-songs").value);
 
   document.getElementById("album-name-display").textContent = albumName;
+  document.getElementById("artist-name-display").textContent = artistName;
+  document.getElementById("release-year-display").textContent = releaseYear;
+  document.getElementById("genre-display").textContent = genre;
+
   document.getElementById("album-info-form").classList.add("hidden");
   document.getElementById("album-rating").classList.remove("hidden");
-  
+
   const songContainer = document.getElementById("song-container");
-  songContainer.innerHTML = ''; // Clear existing song items
+  songContainer.innerHTML = "";
 
   for (let i = 1; i <= numSongs; i++) {
     const songDiv = document.createElement("div");
@@ -48,7 +53,7 @@ const ratingSliders = document.querySelectorAll(".song-rating-slider");
 const errorMessage = document.getElementById("error-message");
 const submitRatingButton = document.getElementById("submit-rating");
 
-ratingSliders.forEach(slider => {
+ratingSliders.forEach((slider) => {
   slider.addEventListener("input", () => {
     const value = parseInt(slider.value);
 
@@ -59,7 +64,12 @@ ratingSliders.forEach(slider => {
     }
 
     // Check if any slider value is valid, if so, hide the error message
-    const anyValid = Array.from(ratingSliders).some(slider => !isNaN(parseInt(slider.value)) && parseInt(slider.value) >= 0 && parseInt(slider.value) <= 10);
+    const anyValid = Array.from(ratingSliders).some(
+      (slider) =>
+        !isNaN(parseInt(slider.value)) &&
+        parseInt(slider.value) >= 0 &&
+        parseInt(slider.value) <= 10
+    );
     if (anyValid) {
       errorMessage.classList.add("hidden");
     }
@@ -71,8 +81,8 @@ submitRatingButton.addEventListener("click", () => {
   let totalRating = 0;
   let validRatingsCount = 0; // To keep track of valid ratings
   let hasInvalidRating = false; // Flag to track if there's an invalid rating
-  
-  ratingSliders.forEach(slider => {
+
+  ratingSliders.forEach((slider) => {
     let rating = parseInt(slider.value);
     if (!isNaN(rating) && rating >= 0 && rating <= 10) {
       totalRating += rating;
@@ -91,7 +101,7 @@ submitRatingButton.addEventListener("click", () => {
       hasInvalidRating = true; // Set the flag to true
     }
   });
-  
+
   if (hasInvalidRating || validRatingsCount === 0) {
     // Handle case when invalid or no valid ratings were provided
     // For example, you might display a message to the user

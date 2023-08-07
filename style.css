@@ -21,11 +21,15 @@ h1 {
   margin-bottom: 50px;
 }
 
-.number-s {
-  display: inline-block;
-  margin-top: 25px;
+/* paragraph typing style */
+
+.album-n {
   margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-block;
 }
+
+/* continue botton */
 
 .continue {
   margin-top: 25px;
@@ -33,6 +37,8 @@ h1 {
   color: black;
   background-color: white;
 }
+
+/* continue link styling */
 
 .continue:link,
 .continue:visited {
@@ -46,16 +52,22 @@ h1 {
   color: white;
 }
 
-.album-n {
-  margin-bottom: 10px;
+/* 2nd seq */
+
+/* album title */
+
+.album-title {
+  font-size: 24px;
   display: inline-block;
 }
 
-/* ... (existing styles) ... */
+/* Album info styling box */
 
-.hidden {
-  display: none;
+.album-info-box {
+  margin: 50px auto;
 }
+
+/* songs label */
 
 #song-container {
   display: flex;
@@ -64,22 +76,41 @@ h1 {
   gap: 20px;
 }
 
+/* song box */
+
 .song-rating-slider {
   width: 30px;
   text-align: center;
+  margin-top: 10px;
 }
+/* 
+submit button */
 
-/* ... (other styles) ... */
-
-#submit-rating {
+.subimit-rate {
   margin-top: 25px;
   font-size: 16px;
-  padding: 5px;
+  padding: 10px;
 }
+
+.submit-rate:link,
+.submit-rate:visited {
+  background-color: black;
+  color: white;
+}
+
+.submit-rate:hover,
+.submit-rate:active {
+  background-color: black;
+  color: white;
+}
+
+/* final rating style */
 
 #final-rating {
   margin-top: 25px;
 }
+
+/* error */
 
 .error-text {
   color: red;

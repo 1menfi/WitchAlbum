@@ -19,15 +19,37 @@
 
     <form id="album-info-form" class="form-active" onsubmit="return validateForm(event)">
       <label class="album-n" for="album-name">Album Name</label><br>
-      <input type="text" id="album-name" required minlength="2" maxlength="16" size="10"><br>
-      <label class="number-s" for="number-songs">Number of songs</label><br>
-      <input type="number" id="number-songs" min="1" max="30"><br>
+      <input type="text" class="typing-bar" id="album-name" required minlength="2" maxlength="16" size="10"><br>
+      
+      <label class="album-n" for="artist-name">Artist Name</label><br>
+      <input type="text" class="typing-bar" id="artist-name" required minlength="2" maxlength="50"><br>
+      
+      <label class="album-n" for="release-year">Release Year</label><br>
+      <input type="number" class="typing-bar" id="release-year" min="1900" max="2099"><br>
+      
+      <label class="album-n" for="genre">Genre</label><br>
+      <input type="text" class="typing-bar" id="genre" maxlength="20"><br>
+      
+      <label class="album-n" for="number-songs">Number of songs</label><br>
+      <input type="number" class="typing-bar" id="number-songs" min="1" max="30"><br>
+      
       <input class="continue" type="submit" value="Continue"/>
     </form>
+    
+    <!-- 2nd gear genesis -->
+
     <div id="album-rating" class="hidden">
-      <h2 id="album-name-display"></h2>
+      <h2 class="album-title" id="album-name-display"></h2>
+      <div class="album-info-box">
+      <p><strong>Artist:</strong> <span id="artist-name-display"></span></p>
+      <p><strong>Release Year:</strong> <span id="release-year-display"></span></p>
+      <p><strong>Genre:</strong> <span id="genre-display"></span></p>
+      </div>
       <div id="song-container"></div>
-      <button id="submit-rating">Rate</button>
+      <button class="subimit-rate" id="submit-rating">Rate</button>
+    </div>
+    
+      
       <div id="final-rating" class="hidden">
         <h3>Final Album Rating:</h3>
         <p id="final-rating-value"></p>
