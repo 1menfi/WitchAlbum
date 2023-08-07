@@ -6,17 +6,17 @@
 }
 
 .contenedor {
- width: 500px;
- margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
 }
 
 body {
-text-align: center;
-font-family:'Courier New', Courier, monospace;
-background-color: pink;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: pink;
 }
 
- /* Header */
+/* Header */
 h1 {
   margin-bottom: 50px;
 }
@@ -30,20 +30,21 @@ h1 {
 .continue {
   margin-top: 25px;
   padding: 10px;
- 
-}
-
-.continue:link, .continue:visited {
   color: black;
   background-color: white;
-
 }
 
-.continue:hover, .continue:active {
+.continue:link,
+.continue:visited {
+  color: black;
+  background-color: white;
+}
+
+.continue:hover,
+.continue:active {
   background-color: black;
   color: white;
 }
-
 
 .album-n {
   margin-bottom: 10px;
@@ -64,7 +65,7 @@ h1 {
 }
 
 .song-rating-slider {
-  width: 30px;;
+  width: 30px;
   text-align: center;
 }
 
@@ -84,7 +85,6 @@ h1 {
   color: red;
   font-size: 14px;
   margin-top: 25px;
-
 }
 
 .hidden {
