@@ -13,12 +13,13 @@
 body {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  background-color: pink;
+  background-color: #000;
 }
 
 /* Header */
 h1 {
   margin-bottom: 50px;
+  color: #ffc0cb;
 }
 
 /* paragraph typing style */
@@ -27,10 +28,14 @@ h1 {
   margin-bottom: 10px;
   margin-top: 10px;
   display: inline-block;
+  color: #ffc0cb;
 }
 
 .typing-bar {
   background-color: transparent;
+  border: 2px solid #ffc0cb;
+  color: white;
+  text-align: center;
 }
 
 /* continue botton */
@@ -38,8 +43,8 @@ h1 {
 .continue {
   margin-top: 25px;
   padding: 10px;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #ffc0cb;
 }
 
 /* continue link styling */
@@ -52,8 +57,8 @@ h1 {
 
 .continue:hover,
 .continue:active {
-  background-color: black;
-  color: white;
+  background-color: #fff;
+  color: #000;
 }
 
 /* 2nd seq */
@@ -63,12 +68,14 @@ h1 {
 .album-title {
   font-size: 24px;
   display: inline-block;
+  color: #ffc0cb;
 }
 
 /* Album info styling box */
 
 .album-info-box {
   margin: 50px auto;
+  color: #ffc0cb;
 }
 
 /* songs label */
@@ -78,6 +85,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  color: #ffc0cb;
 }
 
 /* song box */
@@ -87,6 +95,8 @@ h1 {
   text-align: center;
   margin-top: 10px;
   background-color: transparent;
+  border: 2px solid #ffc0cb;
+  color: #fff;
 }
 
 /* 
@@ -96,24 +106,26 @@ submit button */
   margin-top: 25px;
   font-size: 16px;
   padding: 10px;
+  background-color: #ffc0cb;
 }
 
-.submit-rate:link,
-.submit-rate:visited {
-  background-color: black;
-  color: white;
+.subimit-rate:link,
+.submiit-rate:visited {
+  background-color: #fff;
+  color: #000;
 }
 
-.submit-rate:hover,
-.submit-rate:active {
-  background-color: black;
-  color: white;
+.subimit-rate:hover,
+.subimit-rate:active {
+  background-color: #fff;
+  color: #000;
 }
 
 /* final rating style */
 
 #final-rating {
   margin-top: 25px;
+  color: #ffc0cb;
 }
 
 /* error */
