@@ -46,6 +46,7 @@ h1 {
   border: 2px solid #ffc0cb;
   color: white;
   text-align: center;
+  min-height: 2em;
 }
 
 /* continue botton */
@@ -55,6 +56,8 @@ h1 {
   padding: 10px;
   color: #000;
   background-color: #ffc0cb;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
 }
 
 /* continue link styling */
@@ -107,6 +110,7 @@ h1 {
   background-color: transparent;
   border: 2px solid #ffc0cb;
   color: #fff;
+  min-height: 2em;
 }
 
 /* 
